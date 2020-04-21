@@ -1,0 +1,20 @@
+root = true
+
+[*]
+trim_trailing_whitespace = true
+insert_final_newline     = true
+end_of_line              = lf
+charset                  = utf-8
+tab_width                = 4
+
+[*.{dtd,html,twig,inc,php,phpt,rng,wsdl,xml,xsd,xsl}]
+indent_style             = space
+indent_size              = 4
+
+[*.{js,jsx,ts,tsx}]
+indent_style             = space
+indent_size              = 2
+
+[*.{yml,yaml}]
+indent_style             = space
+indent_size              = 4

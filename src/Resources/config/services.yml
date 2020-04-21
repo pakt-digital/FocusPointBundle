@@ -1,0 +1,14 @@
+services:
+    PaktDigital\FocusPointBundle\Form\ImageFocusType:
+        public: true
+        tags: ['form.type']
+
+    PaktDigital\FocusPointBundle\Imagine\Filter\Loader\FocusPointFilterLoader:
+        public: true
+        tags:
+            - { name: "liip_imagine.filter.loader", loader: paktdigital.filter.focuspoint }
+
+    PaktDigital\FocusPointBundle\Twig\Extension\FocusPointExtension:
+        autowire: true
+        public: true
+        tags: ['twig.extension']

@@ -1,0 +1,17 @@
+<?php
+
+$finder = PhpCsFixer\Finder::create()
+    ->in(__DIR__ . '/src/')
+    ->exclude('var');
+
+return PhpCsFixer\Config::create()
+    ->setUsingCache(false)
+    ->setRules([
+        '@Symfony' => true,
+        '@PSR2' => true,
+        'array_syntax' => ['syntax' => 'short'],
+        'blank_line_before_statement' => true,
+        'concat_space' => false,
+        'line_ending' => false,
+    ])
+    ->setFinder($finder);
