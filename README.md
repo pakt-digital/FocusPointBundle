@@ -11,7 +11,7 @@ Requires:
 ## Usage
 
 ### Image entity
-Implement `ImageInterface` in the entity you use for your images.
+Implement `ImageInterface` in the entity you use for your images
 ```php
 use PaktDigital\FocusPointBundle\Entity\ImageInterface;
 
@@ -38,7 +38,7 @@ public function setFocusPoint(array $focusPoint): self
 }
 ```
 
-Configure `image_entity` in the yaml file with your image entity:
+Configure `image_entity` in the yaml file with your image entity
 ```yml
 paktdigital_focus_point:
     image_entity: '\App\Entity\Media\Image'
@@ -46,7 +46,7 @@ paktdigital_focus_point:
 
 ### The filter
 
-You can apply the filter to an image by adding `paktdigital.filter.focuspoint` to the image's filters in the `liip_image.yml` configuration.
+You can apply the filter to an image by adding `paktdigital.filter.focuspoint` to the image's filters in the `liip_image.yml` configuration
 ```yaml
 exampleImage:
     quality: 100
