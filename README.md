@@ -1,12 +1,11 @@
 [Pakt.digital](https://www.pakt.digital/)
 # FocusPointBundle
 
-This Symfony provides an ImagineBundle filter extension, Twig extension and form type (using VichImageType) for [third774's image focus](https://github.com/third774/image-focus).
+This Symfony bundle provides an liip/imagine-bundle filter extension, a form type (using VichImageType) and an optional Twig extension for [third774's image focus](https://github.com/third774/image-focus).
 
 Requires:
 - liip/imagine-bundle
 - vich/uploader-bundle
-- symfony/twig-bundle
 
 ## Usage
 
@@ -70,7 +69,7 @@ Page:
 ```
 
 ### In Twig
-Twig filter
+Twig filter extension
 ```twig
 <img src="{{ examplePage.image | paktdigital_focus('exampleImage') }}" />
 ```

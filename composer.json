@@ -10,15 +10,16 @@
     ],
     "require": {
 		"php": "^7.4.3",
+        "liip/imagine-bundle": "^2.0",
+        "symfony/asset": "^5.0",
         "symfony/config": "^5.0",
         "symfony/dependency-injection": "^5.0",
         "symfony/form": "^5.0",
         "symfony/options-resolver": "^5.0",
-        "vich/uploader-bundle": "^1.13",
-        "liip/imagine-bundle": "^2.3",
-        "imagine/imagine": "^1.2",
-        "symfony/twig-bundle": "^5.0",
-        "symfony/asset": "^5.0"
+        "vich/uploader-bundle": "^1.13"
+	},
+	"suggest": {
+        "symfony/twig-bundle": "Allows usage of the focus point Twig extension."
 	},
 	"autoload": {
         "psr-4": {
