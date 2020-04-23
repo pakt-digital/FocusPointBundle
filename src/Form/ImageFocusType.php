@@ -13,13 +13,13 @@ use Vich\UploaderBundle\Form\Type\VichImageType;
 
 class ImageFocusType extends AbstractType
 {
-    private $entity;
+    private string $entity;
 
     private const X_KEY = 'x';
 
     private const Y_KEY = 'y';
 
-    public function __construct($image_entity)
+    public function __construct(string $image_entity)
     {
         $this->entity = $image_entity;
     }

@@ -9,7 +9,7 @@ use Symfony\Component\DependencyInjection\Loader;
 
 class PaktDigitalFocusPointExtension extends Extension
 {
-    public function load(array $configs, ContainerBuilder $container)
+    public function load(array $configs, ContainerBuilder $container): void
     {
         $loader = new Loader\YamlFileLoader($container, new FileLocator(__DIR__.'/../Resources/config'));
         $loader->load('services.yml');
@@ -21,7 +21,7 @@ class PaktDigitalFocusPointExtension extends Extension
         $definition->setArgument(0, $config['image_entity']);
     }
 
-    public function getAlias()
+    public function getAlias(): string
     {
         return 'paktdigital_focus_point';
     }

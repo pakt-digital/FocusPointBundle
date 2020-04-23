@@ -1,6 +1,6 @@
 {
     "name": "paktdigital/focus-point-bundle",
-    "description": "(WIP) Symfony image focus point bundle",
+    "description": "Symfony bundle for third774's image focus, for image cropping based on a focus point.",
     "type": "symfony-bundle",
     "authors": [
         {
@@ -29,5 +29,9 @@
     "require-dev": {
         "friendsofphp/php-cs-fixer": "^2.16",
         "phpstan/phpstan": "0.12.*"
-    }
+	},
+	"scripts": {
+		"fix-cs": "php vendor/bin/php-cs-fixer fix --diff",
+        "phpstan": "vendor/bin/phpstan analyse -c phpstan.neon src --level 7"
+	}
 }
