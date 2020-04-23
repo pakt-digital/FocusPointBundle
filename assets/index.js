@@ -1,8 +1,6 @@
 import { FocusPicker } from "image-focus"
 import "./style.scss"
 
-alert('hi');
-
 document
   .querySelectorAll(".js-focus-picker")
   .forEach(picker => {
