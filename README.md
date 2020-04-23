@@ -55,7 +55,7 @@ exampleImage:
 ```
 
 ### Field type
-Add the field to your form and add the class `js-focus-picker`, e.g. in EasyAdmin
+Add `ImageFocusType` to your form and add the css class `js-focus-picker`, e.g. in EasyAdmin
 ```yaml
 Page:
     class: App\Entity\Page
@@ -66,6 +66,14 @@ Page:
             - title
             - intro
             - active
+```
+and add the assets
+```yaml
+assets:
+    js:
+    - '/bundles/paktdigitalfocuspoint/main.js'
+    css:
+    - '/bundles/paktdigitalfocuspoint/main.css'
 ```
 
 ### In Twig
