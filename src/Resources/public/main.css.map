@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack:///./style.scss"],"names":[],"mappings":"AAAA,kCAGQ,wBAAiB,CAAjB,gBAAiB,CACjB,YAAa,CACb,gBAAiB,CACjB,eAAgB","file":"main.css","sourcesContent":[".js-focus-picker {\n\t// Fix for easyadmin\n    img:nth-child(2) {\n        box-shadow: unset;\n        margin: unset;\n        max-height: unset;\n        max-width: unset;\n    }\n}\n"],"sourceRoot":""}

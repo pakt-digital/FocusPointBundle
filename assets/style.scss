@@ -1,0 +1,9 @@
+.js-focus-picker {
+	// Fix for easyadmin
+    img:nth-child(2) {
+        box-shadow: unset;
+        margin: unset;
+        max-height: unset;
+        max-width: unset;
+    }
+}
