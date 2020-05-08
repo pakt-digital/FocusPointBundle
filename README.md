@@ -45,12 +45,12 @@ paktdigital_focus_point:
 
 ### The filter
 
-You can apply the filter to an image by adding `paktdigital.filter.focuspoint` to the image's filters in the `liip_image.yml` configuration
+You can apply the filter to an image by adding `paktdigital.focuspoint` to the image's filters in the `liip_image.yml` configuration
 ```yaml
 exampleImage:
     quality: 100
     filters:
-        paktdigital.filter.focuspoint:
+        paktdigital.focuspoint:
             size: [500, 500]
 ```
 

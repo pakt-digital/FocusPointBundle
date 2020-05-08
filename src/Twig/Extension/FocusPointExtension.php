@@ -33,7 +33,7 @@ class FocusPointExtension extends AbstractExtension
         $path = $this->uploaderHelper->asset($image, 'imageFile');
 
         $config = array_merge($config, [
-            'paktdigital.filter.focuspoint' => $image->getFocusPoint(),
+            'paktdigital.focuspoint' => $image->getFocusPoint(),
         ]);
 
         return $this->cache->getBrowserPath(parse_url($path, PHP_URL_PATH), $filter, $config, $resolver);
