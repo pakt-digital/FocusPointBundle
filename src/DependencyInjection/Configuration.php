@@ -15,8 +15,8 @@ class Configuration implements ConfigurationInterface
         $rootNode
             ->children()
                 ->scalarNode('image_entity')
-                ->isRequired()
-                    ->defaultValue('\App\Entity\Media\Image')->end()
+                    ->defaultValue('App\Entity\Media\Image')->end()
+                ->end()
             ->end();
 
         return $treeBuilder;
