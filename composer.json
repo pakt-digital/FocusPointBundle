@@ -9,19 +9,19 @@
         }
     ],
     "require": {
-		"php": "^7.4.3",
+        "php": "^8.0",
         "liip/imagine-bundle": "^2.0",
         "symfony/asset": "^5.0",
         "symfony/config": "^5.0",
         "symfony/dependency-injection": "^5.0",
         "symfony/form": "^5.0",
         "symfony/options-resolver": "^5.0",
-        "vich/uploader-bundle": "^1.13"
-	},
-	"suggest": {
+        "vich/uploader-bundle": "^1.16"
+    },
+    "suggest": {
         "symfony/twig-bundle": "Allows usage of the focus point Twig extension."
-	},
-	"autoload": {
+    },
+    "autoload": {
         "psr-4": {
             "PaktDigital\\FocusPointBundle\\": "src/"
         }
@@ -29,9 +29,9 @@
     "require-dev": {
         "friendsofphp/php-cs-fixer": "^2.16",
         "phpstan/phpstan": "0.12.*"
-	},
-	"scripts": {
-		"fix-cs": "php vendor/bin/php-cs-fixer fix --diff",
+    },
+    "scripts": {
+        "fix-cs": "php vendor/bin/php-cs-fixer fix --diff",
         "phpstan": "vendor/bin/phpstan analyse -c phpstan.neon src --level 7"
-	}
+    }
 }
